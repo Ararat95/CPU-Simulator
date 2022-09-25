@@ -13,6 +13,7 @@ dont put any other symbols in the end of each line <br>
 writing functions mov, sub, mul, add, div, cmp which has 2 arguments put between arguments ',' and space after it <br>
 it looks like ", " <br>
 and jump statements should be written like this "jmp label" with 1 space betwen command and label name, without any symbols<br>
+empty lines are OK <br>
   
 Code example bellow<br>
   main: <br>
