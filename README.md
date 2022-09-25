@@ -8,7 +8,7 @@
   
 labels defination with ':' symbol <br>
 registers are "r1 to r10"<br>
-commands are mov, cmp, add, sub, mul, div, jmp, jl, jle, je, jne, 
+commands are mov, cmp, add, sub, mul, div, jmp, jl, jle, je, jne,jz, jnz, jg, jge <br> 
 dont put any other symbols in the end of each line <br>
 writing functions mov, sub, mul, add, div, cmp which has 2 arguments put between arguments ',' and space after it <br>
 it looks like ", " <br>
