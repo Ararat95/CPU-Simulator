@@ -18,14 +18,12 @@ CPU::~CPU() {
 }
 
 void CPU::start () {
-    std::string line;
+    std::string line{""};
     get_labels();
     file.open("assembly.txt");
     if (file.is_open()) {
-        while(std::getline(file,line))
-        {
-            if (line == "")
-            {
+        while (std::getline(file,line)) {
+            if (line == "") {
                 continue;
             }
             do_it(line);

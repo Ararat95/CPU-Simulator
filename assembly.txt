@@ -5,9 +5,8 @@ label:
 cmp r1, r2
 jge lab2
 add r1, 1
-add r9, 10
-cmp r9, 20
-jle label
+
+jmp label
 add r5, 1
 jmp main
 lab2:
