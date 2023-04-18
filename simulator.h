@@ -5,9 +5,17 @@
 #include <iostream>
 #include <map>
 
-class CPU
-{
+class CPU{
+    static CPU* instance;
 public:
+    static CPU* getInstance();
+public:
+    CPU(const CPU&) = delete;
+    CPU(CPU&&) = delete;
+    CPU& operator = (const CPU&) = delete;
+    CPU& operator = (CPU&&) = delete;
+    ~CPU();
+private:
     CPU ();
 public:
     typedef void (CPU::*f_point)(std::string&, std::string&);

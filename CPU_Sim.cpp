@@ -1,10 +1,13 @@
-
-#include "Simulator.hpp"
 #include "simulator.h"
 
 int main ()
 {
-    CPU obj;
-    obj.start();
-    obj.print();
+    CPU* obj = CPU::getInstance();
+    try {
+        obj->start();
+        obj->print();
+    }
+    catch (...) {
+        std::cout << "Exeption catched!!!" << std::endl;
+    }
 }
